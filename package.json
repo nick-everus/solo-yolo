@@ -1,0 +1,36 @@
+{
+  "name": "solo-yolo",
+  "version": "1.0.0",
+  "description": "**Open Detection** is a simple, fully local computer-vision project that uses your Mac’s webcam and performs **real-time object detection** with highlighted bounding boxes and labels — all running on your machine.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-everus/solo-yolo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nick-everus/solo-yolo/issues"
+  },
+  "homepage": "https://github.com/nick-everus/solo-yolo#readme",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
+  }
+}

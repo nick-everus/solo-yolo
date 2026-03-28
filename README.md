@@ -14,13 +14,13 @@ No cloud services. No API keys. No data leaves your computer.
 - 🏷️ Object labels + confidence scores
 - 📝 Live text list of detected objects
 - 🖥️ Runs entirely **locally on macOS**
-- 🌐 Simple web UI + local Python backend
+- 🌐 React + TypeScript web UI + local Python backend
 
 ---
 
 ## 🧱 Architecture
 
-Browser (HTML + JS)
+Browser (React + TypeScript)
 ├─ Webcam capture
 ├─ Canvas overlay (boxes + labels)
 └─ Sends frames via HTTP
@@ -38,7 +38,9 @@ Browser overlay + text list
 
 - macOS + webcam
 - Python 3.10+ recommended (`python3 --version`)
+- Node.js 16+ (`node --version`)
 - pip
+- npm
 
 > Note: `ultralytics` will install PyTorch. First install can take a few minutes.
 
@@ -60,16 +62,17 @@ source .venv/bin/activate
 ```bash
 python -m pip install --upgrade pip
 pip install ultralytics fastapi uvicorn python-multipart opencv-python
+npm install
 ```
 ## 4) Start the FastAPI server
 ```bash
 uvicorn server:app --reload --host 127.0.0.1 --port 8000
 ```
-## 5) Serve the web page
+## 5) Start the React development server
 ```bash
-python3 -m http.server 5173
+npm run dev
 ```
 ## Now open your browser to
-http://127.0.0.1:5173/index.html
+http://127.0.0.1:5173
 
 ## Click Start and allow camera permissions.
