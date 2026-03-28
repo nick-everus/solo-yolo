@@ -1,6 +1,6 @@
-# 🎯 Open Detection
+# 🎯 Open Detection (React + TypeScript)
 
-**Open Detection** is a simple, fully local computer-vision project that uses your Mac’s webcam and performs **real-time object detection** with highlighted bounding boxes and labels — all running on your machine.
+**Open Detection** is a fully local computer-vision project that uses your Mac’s webcam and performs **real-time object detection** with highlighted bounding boxes and labels — all running on your machine.
 
 No cloud services. No API keys. No data leaves your computer.
 
